@@ -5,6 +5,8 @@ import Departments from '../components/home/Departments'
 import Gallery from '../components/home/Gallery'
 import LatestVideo from '../components/home/LatestVideo'
 import EnrollmentSection from '../components/home/EnrollmentSection'
+import BlogSection from '../components/home/BlogPosts'
+import Testimonials from '../components/home/Testimonials'
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <AdvantagesCards />
       <Gallery />
       <EnrollmentSection />
+      <BlogSection />
+      <Testimonials />
     </div>
   )
 }

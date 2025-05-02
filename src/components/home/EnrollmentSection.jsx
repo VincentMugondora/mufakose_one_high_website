@@ -26,9 +26,9 @@ const EnrollmentSection = () => {
         <img
           src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1500&q=80"
           alt="Students background"
-          className="w-full h-full object-cover object-center opacity-40"
+          className="w-full h-full object-cover object-center opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-green-700 to-green-500 opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-green-700 to-green-500 opacity-70" />
       </div>
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-0 md:gap-0 py-12 px-2 md:px-8">
         {/* Left Side - Enrollment Form */}
