@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar'
 import NotFound from './components/layout/NotFound'
 import Home from './pages/Home'
 import './App.css'
+import Footer from './components/layout/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   )
