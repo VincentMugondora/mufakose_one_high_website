@@ -62,7 +62,7 @@ const WhyChooseUs = () => (
           {/* Custom shape using clip-path and border */}
           <div className="rounded-tl-[60px] rounded-br-[60px] overflow-hidden border-4 border-green-400 relative" style={{clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 90%)"}}>
             <img
-              src="https://images.unsplash.com/photo-1543337346-5f7dbd4cb934?auto=format&fit=crop&w=500&q=80"
+              src="https://static.wixstatic.com/media/898036_7b02a4e1066545dc8951e9c58d8293cc.jpg/v1/fill/w_400,h_266,al_c,q_80,usm_0.66_1.00_0.01/898036_7b02a4e1066545dc8951e9c58d8293cc.jpg"
               alt="Students"
               className="object-cover w-[340px] h-[400px] md:w-[360px] md:h-[440px]"
             />
