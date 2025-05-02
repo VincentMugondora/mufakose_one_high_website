@@ -4,6 +4,7 @@ import NotFound from './components/layout/NotFound'
 import Home from './pages/Home'
 import './App.css'
 import Footer from './components/layout/Footer'
+import About from './pages/About'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/achievements" element={<Home />} />
             <Route path="/facilities" element={<Home />} />
             <Route path="/arts-culture" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

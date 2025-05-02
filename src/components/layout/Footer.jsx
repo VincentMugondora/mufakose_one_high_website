@@ -12,7 +12,7 @@ const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <footer className="bg-gradient-to-br mt-12 from-green-900 via-green-700 to-green-500 text-white pt-0 pb-0 relative overflow-hidden">
+    <footer className="bg-gradient-to-br mt-16 from-green-900 via-green-700 to-green-500 text-white pt-0 pb-0 relative overflow-hidden">
       <div className="container mx-auto px-4 pt-12 pb-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10 md:text-left text-center">
           {/* Logo/Info */}
