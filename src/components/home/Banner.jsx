@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 
-// Replace these with your real images and messages!
+// Updated slides with high school images
 const slides = [
   {
     gradient: "from-green-800 via-green-600 to-green-400",
-    bgImg: "https://img.freepik.com/free-photo/group-african-kids-standing-each-other-class_23-2148892566.jpg?uid=R141677484&ga=GA1.1.823258313.1744718745&semt=ais_hybrid&w=740",
+    bgImg: "https://static.wixstatic.com/media/898036_68e9b45112284cff91d6a11c1898835c.jpg/v1/fill/w_400,h_266,al_c,q_80,usm_0.66_1.00_0.01/898036_68e9b45112284cff91d6a11c1898835c.jpg", // High school building exterior
     headline: "Welcome to Mufakose I High School",
     subheadline: "Achieving academic and socio-cultural excellence through hard work.",
   },
   {
     gradient: "from-emerald-700 via-emerald-500 to-lime-300",
-    bgImg: "https://static.wixstatic.com/media/898036_c394ae0e5b894f638e64cc7b1b1f5edf.jpg/v1/fill/w_520,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/898036_c394ae0e5b894f638e64cc7b1b1f5edf.jpg",
+    bgImg: "https://static.wixstatic.com/media/898036_1c08e47df7b644298a5532c5fa899092.jpg/v1/fill/w_400,h_264,al_c,q_80,usm_0.66_1.00_0.01/898036_1c08e47df7b644298a5532c5fa899092.jpg", // High school classroom
     headline: "A Tradition of Excellence",
     subheadline: "Join our vibrant community and shape your future with us!",
   },
   {
     gradient: "from-teal-800 via-teal-500 to-green-300",
-    bgImg: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
+    bgImg: "https://static.wixstatic.com/media/898036_7b02a4e1066545dc8951e9c58d8293cc.jpg/v1/fill/w_400,h_266,al_c,q_80,usm_0.66_1.00_0.01/898036_7b02a4e1066545dc8951e9c58d8293cc.jpg", // High school students
     headline: "Empowering Tomorrow's Leaders",
     subheadline: "Discover your potential at Mufakose I High School.",
   },
