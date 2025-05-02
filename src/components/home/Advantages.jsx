@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AcademicCapIcon, UsersIcon, StarIcon, DeviceTabletIcon, TrophyIcon } from "@heroicons/react/24/solid";
 
 const advantages = [
@@ -8,6 +9,7 @@ const advantages = [
     description:
       "Consistently outstanding O and A Level results, with a proven record of high pass rates and provincial awards.",
     gradient: "from-green-500 to-green-600",
+    route: "/academics"
   },
   {
     icon: <UsersIcon className="h-12 w-12 text-white" />,
@@ -15,6 +17,7 @@ const advantages = [
     description:
       "A diverse, inclusive environment where students from various backgrounds thrive together in harmony.",
     gradient: "from-green-600 to-green-700",
+    route: "/student-life"
   },
   {
     icon: <StarIcon className="h-12 w-12 text-white" />,
@@ -22,6 +25,7 @@ const advantages = [
     description:
       "Recipient of the Secretary's Award and recognized for excellence in both academics and extracurricular activities.",
     gradient: "from-green-700 to-green-800",
+    route: "/achievements"
   },
   {
     icon: <DeviceTabletIcon className="h-12 w-12 text-white" />,
@@ -29,6 +33,7 @@ const advantages = [
     description:
       "Well-equipped computer labs, sporting grounds, and learning spaces powered by solar energy and advanced resources.",
     gradient: "from-green-800 to-green-900",
+    route: "/facilities"
   },
   {
     icon: <TrophyIcon className="h-12 w-12 text-white" />,
@@ -36,6 +41,7 @@ const advantages = [
     description:
       "Active arts, music, and culture programs with a strong tradition of participation and achievement.",
     gradient: "from-green-900 to-green-950",
+    route: "/arts-culture"
   },
 ];
 
@@ -79,13 +85,16 @@ const AdvantagesCards = () => (
               <p className="text-green-700 leading-relaxed">
                 {adv.description}
               </p>
-              <div className="mt-6 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                <a href="#learn-more" className="text-green-600 font-semibold hover:text-green-700 flex items-center gap-2">
+              <div className="mt-6 md:opacity-0 md:transform md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300">
+                <Link 
+                  to={adv.route}
+                  className="inline-flex items-center gap-2 text-green-600 font-semibold hover:text-green-700"
+                >
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
