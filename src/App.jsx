@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className='w-[100%] h-[100%] bg-green-500'>
         <Navbar />
         <main>
           <Routes>
