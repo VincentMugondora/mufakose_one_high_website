@@ -4,6 +4,7 @@ import Banner from '../components/home/Banner'
 import Departments from '../components/home/Departments'
 import Gallery from '../components/home/Gallery'
 import LatestVideo from '../components/home/LatestVideo'
+import EnrollmentSection from '../components/home/EnrollmentSection'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <LatestVideo />
       <AdvantagesCards />
       <Gallery />
+      <EnrollmentSection />
     </div>
   )
 }
