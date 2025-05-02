@@ -17,11 +17,11 @@ const About = () => {
       
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center md:text-left mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-green-800 mb-4">
             About Our School
           </h2>
-          <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-green-600 md:mx-0 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           {/* Content Section */}
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 text-center md:text-left">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-green-100 rounded-full text-green-800 font-semibold mb-4">
                 Established 1970
