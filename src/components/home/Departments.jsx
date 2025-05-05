@@ -65,7 +65,7 @@ const departments = [
     years: 3,
     price: 470,
     badge: "Practical",
-    badgeColor: "bg-orange-500",
+    badgeColor: "bg-green-500",
   },
   {
     name: "Guidance & Counseling",
@@ -172,7 +172,7 @@ const Departments = () => {
               <div className="flex items-center justify-between px-6 pb-6 pt-2 border-t border-gray-100 text-gray-500 text-sm font-medium">
                 <span className="flex items-center gap-1"><UserGroupIcon className="h-5 w-5 text-green-500" /> {dept.seats} Seats</span>
                 <span className="flex items-center gap-1"><ClockIcon className="h-5 w-5 text-green-500" /> {dept.years} Years</span>
-                <span className="bg-gradient-to-br from-orange-400 to-yellow-400 text-white font-bold px-4 py-1 rounded-lg shadow-xl text-base border-2 border-white scale-110 group-hover:scale-125 transition-transform duration-300">${dept.price}</span>
+                <span className="bg-gradient-to-br from-green-400 to-yellow-400 text-white font-bold px-4 py-1 rounded-lg shadow-xl text-base border-2 border-white scale-110 group-hover:scale-125 transition-transform duration-300">${dept.price}</span>
               </div>
               {/* Glow border effect */}
               <div className="pointer-events-none absolute inset-0 rounded-2xl border-4 border-transparent group-hover:border-green-300 group-hover:shadow-green-200 group-hover:shadow-2xl transition-all duration-500"></div>

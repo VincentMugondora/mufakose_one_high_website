@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import './App.css'
 import Footer from './components/layout/Footer'
 import About from './pages/About'
+import Academics from './pages/Academics'
 
 function App() {
   return (
@@ -14,12 +15,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/academics" element={<Home />} />
-            <Route path="/student-life" element={<Home />} />
-            <Route path="/achievements" element={<Home />} />
-            <Route path="/facilities" element={<Home />} />
-            <Route path="/arts-culture" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/academics" element={<Academics />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
