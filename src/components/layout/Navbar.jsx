@@ -43,7 +43,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="relative z-50 w-full p-0 m-0 bg-green-700 shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full p-0 m-0 bg-green-700 shadow-md shadow-mdz-50">
       <div className="flex items-center justify-between px-6 py-3 mx-auto max-w-7xl">
         <Link to="/" className="flex items-center gap-2">
           <img src="/logo.png" alt="School Logo" className="w-10 h-10" />

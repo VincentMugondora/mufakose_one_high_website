@@ -94,7 +94,7 @@ button:focus-visible {
 
 /* Main Content Wrapper */
 main {
-  margin-top: 80px; /* Same as navbar height */
+  /* margin-top: 80px; Same as navbar height */
   flex: 1;
   width: 100%;
 }
