@@ -2,7 +2,8 @@ import React from 'react'
 import AboutHero from '../components/about/Hero'
 import AboutFeature from '../components/about/About'
 import AboutAbout from '../components/home/About'
-import TestimonialSection from '../components/about/TestimonialSection'
+import Testimonials from '../components/home/Testimonials'
+import MeetOurTeachers from '../components/about/Teachers'
 
 const About = () => {
   return (
@@ -10,7 +11,8 @@ const About = () => {
       <AboutHero />
       <AboutAbout />
       <AboutFeature />  
-      <TestimonialSection />
+      <Testimonials />
+      <MeetOurTeachers />
     </div>
   )
 }

@@ -38,3 +38,38 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 0 10px;
+  min-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    min-width: 33.3333%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .embla__slide {
+    min-width: 25%;
+  }
+}
