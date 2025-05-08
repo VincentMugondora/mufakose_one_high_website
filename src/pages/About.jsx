@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <AboutHero />
       <AboutAbout />
-      <About
+      <About />
       <AboutFeature />  
     </div>
   )
