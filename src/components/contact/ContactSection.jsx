@@ -11,7 +11,7 @@ export default function ContactSection() {
           {/* Image */}
           <img
             src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80"
-            alt="Students"
+            alt="Mufakose 1 High School"
             className="object-cover object-center w-full h-64 md:h-full md:rounded-none rounded-t-2xl md:pl-4"
             style={{
               clipPath: "polygon(8% 0, 100% 0, 100% 100%, 0 100%)",
@@ -21,30 +21,30 @@ export default function ContactSection() {
 
         {/* Right: Contact Form */}
         <div className="flex flex-col justify-center flex-1 p-8 md:p-10">
-          <h2 className="text-3xl font-bold mb-2 text-[#23786a]">Get In Touch</h2>
+          <h2 className="text-3xl font-bold mb-2 text-[#23786a]">Contact Mufakose 1 High</h2>
           <p className="mb-6 text-sm text-gray-600">
-            Reach out to us with your queries, suggestions, or messages. We are here to help and will get back to you as soon as possible.
+            We'd love to hear from you! Whether you're a parent, student, or alumnus, feel free to reach out for inquiries, suggestions, or general communication.
           </p>
           <form className="space-y-4">
             <div className="flex flex-col gap-4 md:flex-row">
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="Full Name"
                 className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#23786a] transition"
               />
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="Email Address"
                 className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#23786a] transition"
               />
             </div>
             <input
               type="text"
-              placeholder="Your Subject"
+              placeholder="Subject (e.g. Admission, Visit, Feedback)"
               className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#23786a] transition"
             />
             <textarea
-              placeholder="Write Your Message"
+              placeholder="Write your message here..."
               rows={5}
               className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#23786a] transition resize-none"
             />
