@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
+// 10 testimonials for the carousel
 const testimonials = [
   {
     name: "Anthony Nicoll",
@@ -33,6 +34,54 @@ const testimonials = [
     score: 99,
     img: "https://randomuser.me/api/portraits/men/35.jpg",
   },
+  {
+    name: "Sarah Lee",
+    role: "Student",
+    text: "The teachers are amazing and I have made lifelong friends here.",
+    rating: 5,
+    score: 98,
+    img: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "John Doe",
+    role: "Student",
+    text: "A wonderful environment for learning and growing.",
+    rating: 5,
+    score: 97,
+    img: "https://randomuser.me/api/portraits/men/45.jpg",
+  },
+  {
+    name: "Jane Smith",
+    role: "Student",
+    text: "I love the school spirit and the dedication of the staff.",
+    rating: 5,
+    score: 96,
+    img: "https://randomuser.me/api/portraits/women/46.jpg",
+  },
+  {
+    name: "Michael Brown",
+    role: "Student",
+    text: "Great facilities and excellent academic support.",
+    rating: 5,
+    score: 95,
+    img: "https://randomuser.me/api/portraits/men/47.jpg",
+  },
+  {
+    name: "Emily White",
+    role: "Student",
+    text: "The extracurricular activities are top-notch!",
+    rating: 5,
+    score: 94,
+    img: "https://randomuser.me/api/portraits/women/48.jpg",
+  },
+  {
+    name: "Chris Green",
+    role: "Student",
+    text: "I feel prepared for my future thanks to this school.",
+    rating: 5,
+    score: 93,
+    img: "https://randomuser.me/api/portraits/men/49.jpg",
+  },
 ];
 
 function StarRating({ count }) {
@@ -41,7 +90,7 @@ function StarRating({ count }) {
       {Array.from({ length: count }).map((_, i) => (
         <svg
           key={i}
-          className="w-5 h-5 text-yellow-400"
+          className="w-5 h-5 text-orange-400"
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -53,7 +102,7 @@ function StarRating({ count }) {
 }
 
 export default function TestimonialCarousel() {
-  // Show 1 card on small screens, 2 on md, 3 on lg, 4 on xl
+  // Responsive: 1 on mobile, 2 on md, 3 on lg, 4 on xl+
   const getCardsToShow = () => {
     if (window.innerWidth >= 1280) return 4;
     if (window.innerWidth >= 1024) return 3;
@@ -63,62 +112,67 @@ export default function TestimonialCarousel() {
 
   const [current, setCurrent] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(getCardsToShow());
+  const [isSliding, setIsSliding] = useState(false);
+  const timeoutRef = useRef(null);
 
-  React.useEffect(() => {
+  // Responsive handler
+  useEffect(() => {
     const handleResize = () => setCardsToShow(getCardsToShow());
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Compute visible testimonials
-  const visibleTestimonials = testimonials.slice(
-    current,
-    current + cardsToShow
-  );
+  // Auto-scroll: delay 2s, then animate slide (0.5s)
+  useEffect(() => {
+    timeoutRef.current = setTimeout(() => {
+      setIsSliding(true);
+      setTimeout(() => {
+        setIsSliding(false);
+        setCurrent((prev) =>
+          prev + cardsToShow < testimonials.length ? prev + 1 : 0
+        );
+      }, 500); // 0.5s slide animation
+    }, 2000); // 2s pause
+    return () => clearTimeout(timeoutRef.current);
+  }, [current, cardsToShow]);
 
-  // Handle next/prev
-  const canPrev = current > 0;
-  const canNext = current + cardsToShow < testimonials.length;
+  // Dots navigation
+  const numDots = testimonials.length - cardsToShow + 1;
+
+  // For slide animation direction (right to left)
+  const slideClass = isSliding
+    ? "transition-transform duration-500 ease-in-out -translate-x-10 opacity-60"
+    : "transition-transform duration-500 ease-in-out translate-x-0 opacity-100";
 
   return (
     <section className="py-12 bg-gray-50">
+      {/* Header */}
       <div className="px-4 mb-8 text-center">
-        <div className="flex items-center justify-center gap-2 mb-2 font-semibold tracking-widest text-yellow-500 uppercase">
-          <svg className="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <div className="flex items-center justify-center gap-2 mb-2 font-semibold tracking-widest text-orange-400 uppercase">
+          <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
             <path d="M8 12l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none" />
           </svg>
           TESTIMONIALS
         </div>
         <h2 className="mb-2 text-3xl font-bold md:text-4xl">
-          What Our Students <span className="text-yellow-500">Say's</span>
+          What Our Students <span className="text-orange-400">Say's</span>
         </h2>
         <p className="max-w-xl mx-auto text-gray-500">
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </p>
       </div>
+      {/* Carousel */}
       <div className="relative flex items-center justify-center">
-        {/* Prev Button */}
-        <button
-          className={`absolute left-0 z-10 bg-white rounded-full shadow p-2 text-yellow-500 hover:bg-yellow-100 transition disabled:opacity-30`}
-          style={{ top: "50%", transform: "translateY(-50%)" }}
-          onClick={() => setCurrent((prev) => Math.max(prev - 1, 0))}
-          disabled={!canPrev}
-          aria-label="Previous"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
         {/* Cards */}
-        <div className="flex justify-center w-full gap-6 overflow-hidden">
-          {visibleTestimonials.map((t, i) => (
+        <div className={`flex gap-6 overflow-hidden w-full justify-center ${slideClass}`}>
+          {testimonials.slice(current, current + cardsToShow).map((t, i) => (
             <div
               key={i}
-              className="relative flex flex-col justify-between w-full max-w-xs p-6 transition-transform bg-white border-b-4 border-yellow-400 shadow-md rounded-2xl"
+              className="relative flex flex-col justify-between w-full max-w-xs p-6 bg-white border-b-4 border-orange-300 shadow-md rounded-2xl"
             >
               {/* Score badge */}
-              <div className="absolute top-0 right-0 px-3 py-1 mt-3 mr-3 text-sm font-bold text-white bg-yellow-400 rounded-full shadow-md">
+              <div className="absolute top-0 right-0 px-3 py-1 mt-3 mr-3 text-sm font-bold text-white bg-orange-400 rounded-full shadow-md">
                 {t.score}
               </div>
               {/* Stars */}
@@ -130,37 +184,26 @@ export default function TestimonialCarousel() {
                 <img
                   src={t.img}
                   alt={t.name}
-                  className="object-cover w-12 h-12 mr-3 border-2 border-yellow-300 rounded-full"
+                  className="object-cover w-12 h-12 mr-3 border-2 border-orange-200 rounded-full"
                 />
                 <div>
                   <div className="font-semibold">{t.name}</div>
-                  <div className="text-sm text-yellow-500">{t.role}</div>
+                  <div className="text-sm text-orange-400">{t.role}</div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        {/* Next Button */}
-        <button
-          className={`absolute right-0 z-10 bg-white rounded-full shadow p-2 text-yellow-500 hover:bg-yellow-100 transition disabled:opacity-30`}
-          style={{ top: "50%", transform: "translateY(-50%)" }}
-          onClick={() => setCurrent((prev) => Math.min(prev + 1, testimonials.length - cardsToShow))}
-          disabled={!canNext}
-          aria-label="Next"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
       </div>
       {/* Dots navigation */}
       <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: testimonials.length - cardsToShow + 1 }).map((_, idx) => (
+        {Array.from({ length: numDots }).map((_, idx) => (
           <span
             key={idx}
-            className={`w-3 h-3 rounded-full inline-block transition-all duration-200 ${idx === current ? "bg-yellow-500" : "bg-yellow-200"}`}
+            className={`w-3 h-3 rounded-full inline-block transition-all duration-200 cursor-pointer ${
+              idx === current ? "bg-orange-400" : "bg-orange-100"
+            }`}
             onClick={() => setCurrent(idx)}
-            style={{ cursor: "pointer" }}
           ></span>
         ))}
       </div>
