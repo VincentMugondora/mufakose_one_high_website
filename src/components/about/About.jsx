@@ -3,8 +3,8 @@ import React from "react";
 const AboutFeature = () => (
   <section className="py-12 bg-white">
     <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
-      {/* Left: One Big Stunning Image */}
-      <div className="flex-1 flex flex-col items-center justify-center lg:items-start min-h-[400px] relative">
+      {/* Left: One Big Stunning Image (hidden on small devices) */}
+      <div className="hidden sm:flex flex-1 flex-col items-center justify-center lg:items-start min-h-[400px] relative">
         {/* Blurred Green Accent Shape */}
         <div className="absolute -top-16 -left-16 w-[32rem] h-[32rem] bg-green-400 opacity-20 rounded-full blur-3xl z-0" />
         {/* Image Container with Glow, Gradient Overlay, and Animation */}
@@ -66,7 +66,7 @@ const AboutFeature = () => (
           <img
             src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=100&q=80"
             alt="Happy student testimonial"
-            className="w-20 h-20 rounded-full object-cover border-4 border-green-200 shadow order-1 sm:order-none"
+            className="w-20 h-20 rounded-full object-cover border-4 border-green-200 shadow order-1 sm:order-none hidden sm:block"
           />
           <div className="flex-1 text-center sm:text-left order-2 sm:order-none">
             <p className="text-gray-700 italic mb-2">“This school gave me the confidence and skills to pursue my dreams. The teachers and friends I made here changed my life!”</p>
