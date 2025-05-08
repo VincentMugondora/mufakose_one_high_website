@@ -8,7 +8,6 @@ const About = () => {
     <div>
       <AboutHero />
       <AboutAbout />
-      <About />
       <AboutFeature />  
     </div>
   )
