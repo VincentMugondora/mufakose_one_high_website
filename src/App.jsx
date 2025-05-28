@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer'
 import About from './pages/About'
 import Academics from './pages/Academics'
 import Contact from './pages/Contact'
+import Events from './pages/Events'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/events" element={<Events />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

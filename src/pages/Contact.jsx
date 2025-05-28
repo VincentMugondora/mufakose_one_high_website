@@ -7,7 +7,11 @@ import MapSection from '../components/contact/MapSection'
 const Contact = () => {
   return (
     <div>
-      <AboutHero />
+      <AboutHero
+  title="Contact Us"
+  breadcrumb={["Home", "Contact Us"]}
+/>
+
       <InfoCards />
       <ContactSection />
       <MapSection />
