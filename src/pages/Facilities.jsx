@@ -1,11 +1,11 @@
 import React from 'react';
-import AboutHero from '../components/about/Hero'; // Reusing the Hero component
+import AboutHero from '../components/about/Hero'; 
 
 const facilities = [
   {
     name: 'Modern Classrooms',
     description: 'Spacious and well-equipped classrooms conducive to learning.',
-    icon: '🏫', // Placeholder icon
+    icon: '🏫', 
     imgSrc: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Classroom',
   },
   {
