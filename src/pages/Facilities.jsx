@@ -18,25 +18,25 @@ const facilities = [
     name: 'Computer Lab',
     description: 'Fully equipped computer lab with internet access for all students.',
     icon: '💻',
-    imgSrc: 'https://images.unsplash.com/photo-1581093588401-004c8646b101?auto=format&fit=crop&w=800&q=80',
+    imgSrc: 'https://static.wixstatic.com/media/898036_1c08e47df7b644298a5532c5fa899092.jpg/v1/fill/w_400,h_264,al_c,q_80,usm_0.66_1.00_0.01/898036_1c08e47df7b644298a5532c5fa899092.jpg',
   },
   {
     name: 'School Library',
     description: 'A vast collection of books, journals, and digital resources.',
     icon: '📚',
-    imgSrc: 'https://images.unsplash.com/photo-1581090700227-1d1c69d49c3e?auto=format&fit=crop&w=800&q=80',
+    imgSrc: 'https://i.pinimg.com/736x/f1/4d/e2/f14de29840d1ac51cdc4298b4414fb6b.jpg',
   },
   {
     name: 'Sports Grounds',
     description: 'Expansive grounds for various sports including soccer, netball, and athletics.',
     icon: '⚽',
-    imgSrc: 'https://images.unsplash.com/photo-1579982666786-bfac3fd3dd31?auto=format&fit=crop&w=800&q=80',
+    imgSrc: 'https://static.wixstatic.com/media/898036_1d64eab3d89d4a3283c5d0d8cc89404a.jpg/v1/fill/w_621,h_277,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/898036_1d64eab3d89d4a3283c5d0d8cc89404a.jpg',
   },
   {
     name: 'Art & Music Room',
     description: 'Dedicated spaces to nurture creativity in arts and music.',
     icon: '🎨🎵',
-    imgSrc: 'https://images.unsplash.com/photo-1616627458511-d2a264e0631c?auto=format&fit=crop&w=800&q=80',
+    imgSrc: 'https://i.pinimg.com/736x/18/70/1b/18701bc598bb31fe951706abdf91ffc8.jpg',
   },
 ];
 
