@@ -164,10 +164,6 @@ export default function OLevelSubjectsPage() {
           </div>
         </section>
       </div>
-
-      <footer className="py-10 mt-12 text-sm text-center text-green-700 bg-green-100 border-t border-green-200">
-        &copy; {new Date().getFullYear()} Mufakose 1 High School. Shaping Zimbabwe’s Future Leaders.
-      </footer>
     </div>
   );
 }
