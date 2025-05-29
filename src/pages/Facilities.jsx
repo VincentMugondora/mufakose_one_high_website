@@ -1,42 +1,42 @@
 import React from 'react';
-import AboutHero from '../components/about/Hero'; 
+import AboutHero from '../components/about/Hero'; // Reusing the Hero component
 
 const facilities = [
   {
     name: 'Modern Classrooms',
     description: 'Spacious and well-equipped classrooms conducive to learning.',
-    icon: '🏫', 
-    imgSrc: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Classroom',
+    icon: '🏫',
+    imgSrc: 'https://i.pinimg.com/736x/c7/e0/08/c7e008c6cc06377d378edc1b986c91ee.jpg',
   },
   {
     name: 'Science Laboratories',
     description: 'State-of-the-art labs for Physics, Chemistry, and Biology practicals.',
     icon: '🔬',
-    imgSrc: 'https://via.placeholder.com/600x400.png/388E3C/FFFFFF?text=Science+Lab',
+    imgSrc: 'https://i.pinimg.com/736x/9c/f6/73/9cf67319816b55c582b86028e9b4506e.jpg',
   },
   {
     name: 'Computer Lab',
     description: 'Fully equipped computer lab with internet access for all students.',
     icon: '💻',
-    imgSrc: 'https://via.placeholder.com/600x400.png/4CAF50/FFFFFF?text=Computer+Lab',
+    imgSrc: 'https://images.unsplash.com/photo-1581093588401-004c8646b101?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'School Library',
     description: 'A vast collection of books, journals, and digital resources.',
     icon: '📚',
-    imgSrc: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Library',
+    imgSrc: 'https://images.unsplash.com/photo-1581090700227-1d1c69d49c3e?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Sports Grounds',
     description: 'Expansive grounds for various sports including soccer, netball, and athletics.',
     icon: '⚽',
-    imgSrc: 'https://via.placeholder.com/600x400.png/388E3C/FFFFFF?text=Sports+Ground',
+    imgSrc: 'https://images.unsplash.com/photo-1579982666786-bfac3fd3dd31?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Art & Music Room',
     description: 'Dedicated spaces to nurture creativity in arts and music.',
     icon: '🎨🎵',
-    imgSrc: 'https://via.placeholder.com/600x400.png/4CAF50/FFFFFF?text=Art+Music',
+    imgSrc: 'https://images.unsplash.com/photo-1616627458511-d2a264e0631c?auto=format&fit=crop&w=800&q=80',
   },
 ];
 
@@ -100,7 +100,6 @@ export default function FacilitiesPage() {
             </button>
           </div>
         </section>
-
       </div>
     </div>
   );
