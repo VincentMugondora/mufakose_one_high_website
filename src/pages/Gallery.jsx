@@ -3,14 +3,14 @@ import AboutHero from '../components/about/Hero'; // Reusing the Hero component
 
 // Placeholder gallery items - replace with actual image paths or data
 const galleryItems = [
-  { id: 1, src: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Sporting+Event', alt: 'Sporting Event', category: 'Sports' },
-  { id: 2, src: 'https://via.placeholder.com/600x400.png/388E3C/FFFFFF?text=Science+Fair', alt: 'Science Fair', category: 'Academics' },
-  { id: 3, src: 'https://via.placeholder.com/600x400.png/4CAF50/FFFFFF?text=Cultural+Day', alt: 'Cultural Day', category: 'Events' },
-  { id: 4, src: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Graduation+Ceremony', alt: 'Graduation Ceremony', category: 'Events' },
-  { id: 5, src: 'https://via.placeholder.com/600x400.png/388E3C/FFFFFF?text=Art+Exhibition', alt: 'Art Exhibition', category: 'Arts' },
-  { id: 6, src: 'https://via.placeholder.com/600x400.png/4CAF50/FFFFFF?text=School+Campus', alt: 'School Campus', category: 'Campus' },
-  { id: 7, src: 'https://via.placeholder.com/600x400.png/2E7D32/FFFFFF?text=Classroom+Activity', alt: 'Classroom Activity', category: 'Academics' },
-  { id: 8, src: 'https://via.placeholder.com/600x400.png/388E3C/FFFFFF?text=Library+View', alt: 'Library View', category: 'Campus' },
+  { id: 1, src: 'https://static.wixstatic.com/media/898036_26b9e2e4575b4bc6b2e046755559fdd0.jpg/v1/fill/w_639,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_26b9e2e4575b4bc6b2e046755559fdd0.jpg', alt: 'Sporting Event', category: 'Sports' },
+  { id: 2, src: 'https://static.wixstatic.com/media/898036_8396f666fc6a47a8a8c9904a00afadfd.jpg/v1/fill/w_635,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_8396f666fc6a47a8a8c9904a00afadfd.jpg', alt: 'Science Fair', category: 'Academics' },
+  { id: 3, src: 'https://static.wixstatic.com/media/898036_b4a37c7ec8bb496ca3cf984c75134982.jpg/v1/fill/w_635,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_b4a37c7ec8bb496ca3cf984c75134982.jpg', alt: 'Cultural Day', category: 'Events' },
+  { id: 4, src: 'https://static.wixstatic.com/media/898036_c7c1708410d7494eb8312941c7cbf729.jpg/v1/fill/w_690,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_c7c1708410d7494eb8312941c7cbf729.jpg', alt: 'Graduation Ceremony', category: 'Events' },
+  { id: 5, src: 'https://static.wixstatic.com/media/898036_9eefc024b6ab46a18105da28adc5043a.jpg/v1/fill/w_635,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_9eefc024b6ab46a18105da28adc5043a.jpg', alt: 'Art Exhibition', category: 'Arts' },
+  { id: 6, src: 'https://static.wixstatic.com/media/898036_d79e1898e2dc49b3a0ad68559ffa3d0b.jpg/v1/fill/w_695,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_d79e1898e2dc49b3a0ad68559ffa3d0b.jpg', alt: 'School Campus', category: 'Campus' },
+  { id: 7, src: 'https://static.wixstatic.com/media/898036_0ec5e538d480405eaac9d06e9d504c53.jpg/v1/fill/w_690,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_0ec5e538d480405eaac9d06e9d504c53.jpg', alt: 'Classroom Activity', category: 'Academics' },
+  { id: 8, src: 'https://static.wixstatic.com/media/898036_0fb728c1607649f9bb5e85202520c741.jpg/v1/fill/w_690,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/898036_0fb728c1607649f9bb5e85202520c741.jpg', alt: 'Library View', category: 'Campus' },
 ];
 
 export default function GalleryPage() {
