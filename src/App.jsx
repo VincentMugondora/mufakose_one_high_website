@@ -9,6 +9,7 @@ import Academics from './pages/Academics'
 import Contact from './pages/Contact'
 import Events from './pages/Events'
 import News from './pages/News'
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/events" element={<Events />} />
             <Route path="/news" element={<News />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
