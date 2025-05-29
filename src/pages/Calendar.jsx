@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutHero from '../components/about/Hero'; // Reusing the Hero component
+import AboutHero from '../components/about/Hero';
 
 const calendarEvents = [
   {

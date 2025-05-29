@@ -13,6 +13,8 @@ import Gallery from './pages/Gallery'
 import Facilities from './pages/Facilities'
 import Staff from './pages/Staff'
 import Calendar from './pages/Calendar'
+import Policies from './pages/Policies'
+import OLevelSubjects from './pages/OLevelSubjects'
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/staff" element={<Staff />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/policies" element={<Policies />} />
+            <Route path="/academics/o-level-subjects" element={<OLevelSubjects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -41,4 +45,5 @@ function App() {
 }
 
 export default App
+
 
