@@ -15,6 +15,8 @@ import Staff from './pages/Staff'
 import Calendar from './pages/Calendar'
 import Policies from './pages/Policies'
 import OLevelSubjects from './pages/OLevelSubjects'
+import ALevelSubjects from './pages/ALevelSubjects'
+import Extracurricular from './pages/Extracurricular'
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/policies" element={<Policies />} />
             <Route path="/academics/o-level-subjects" element={<OLevelSubjects />} />
+            <Route path="/academics/a-level-subjects" element={<ALevelSubjects />} />
+            <Route path="/academics/extracurricular" element={<Extracurricular />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
