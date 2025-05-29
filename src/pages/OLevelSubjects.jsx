@@ -7,7 +7,7 @@ const oLevelSubjects = [
     name: 'Mathematics',
     code: '4028',
     icon: '🧮',
-    description: 'Develops logical thinking, problem-solving skills, and a foundation for further studies in STEM fields.',
+    description: 'Essential for all students, Mathematics at Mufakose 1 High develops logical reasoning and problem-solving skills, forming the backbone for STEM careers.',
     department: 'Sciences & Mathematics',
     color: 'bg-green-600',
     hoverColor: 'hover:bg-green-700',
@@ -17,7 +17,7 @@ const oLevelSubjects = [
     name: 'English Language',
     code: '1122',
     icon: '📚',
-    description: 'Enhances communication skills, comprehension, and creative expression through language and literature.',
+    description: 'Our English Language curriculum builds strong communication, comprehension, and creative writing skills, preparing students for academic and real-world success.',
     department: 'Languages & Arts',
     color: 'bg-emerald-600',
     hoverColor: 'hover:bg-emerald-700',
@@ -27,7 +27,7 @@ const oLevelSubjects = [
     name: 'Integrated Science',
     code: '5006',
     icon: '🔬',
-    description: 'Provides a broad understanding of biological, chemical, and physical concepts, fostering scientific inquiry.',
+    description: 'A hands-on subject that introduces learners to Biology, Chemistry, and Physics, fostering curiosity and scientific thinking.',
     department: 'Sciences & Mathematics',
     color: 'bg-teal-600',
     hoverColor: 'hover:bg-teal-700',
@@ -37,7 +37,7 @@ const oLevelSubjects = [
     name: 'History',
     code: '2167',
     icon: '📜',
-    description: 'Explores past events and societies, developing critical analysis and an understanding of historical context.',
+    description: 'History at Mufakose 1 High deepens understanding of Zimbabwean, African, and world events, encouraging critical analysis and citizenship.',
     department: 'Humanities',
     color: 'bg-lime-600',
     hoverColor: 'hover:bg-lime-700',
@@ -47,7 +47,7 @@ const oLevelSubjects = [
     name: 'Geography',
     code: '2217',
     icon: '🌍',
-    description: 'Studies the Earth\'s landscapes, environments, and the relationship between people and their surroundings.',
+    description: 'Students explore physical and human geography, with a focus on Zimbabwe’s environment and global issues such as climate change.',
     department: 'Humanities',
     color: 'bg-green-500',
     hoverColor: 'hover:bg-green-600',
@@ -57,7 +57,7 @@ const oLevelSubjects = [
     name: 'Shona / Ndebele',
     code: '3156 / 3155',
     icon: '🗣️',
-    description: 'Focuses on proficiency in local languages, cultural understanding, and literary appreciation.',
+    description: 'We promote local language proficiency and cultural heritage through Shona and Ndebele, supporting identity and community values.',
     department: 'Languages & Arts',
     color: 'bg-emerald-500',
     hoverColor: 'hover:bg-emerald-600',
@@ -67,7 +67,7 @@ const oLevelSubjects = [
     name: 'Commerce',
     code: '7100',
     icon: '📈',
-    description: 'Introduces the principles of business, trade, and finance, preparing students for commercial fields.',
+    description: 'Commerce introduces students to business principles and entrepreneurship, vital for Zimbabwe’s economic landscape.',
     department: 'Commercials',
     color: 'bg-teal-500',
     hoverColor: 'hover:bg-teal-600',
@@ -77,7 +77,7 @@ const oLevelSubjects = [
     name: 'Principles of Accounts',
     code: '7110',
     icon: '🧾',
-    description: 'Covers the fundamentals of accounting, financial record-keeping, and business decision-making.',
+    description: 'Accounting skills are taught with practical examples, preparing students for business studies and financial literacy in daily life.',
     department: 'Commercials',
     color: 'bg-lime-500',
     hoverColor: 'hover:bg-lime-600',
@@ -87,17 +87,17 @@ const oLevelSubjects = [
     name: 'Computer Studies',
     code: '7010',
     icon: '💻',
-    description: 'Develops ICT skills, understanding of computer systems, programming basics, and digital literacy.',
+    description: 'Students gain ICT skills, digital literacy, and an introduction to coding, making them ready for the digital world.',
     department: 'Technicals & Vocations',
     color: 'bg-green-700',
     hoverColor: 'hover:bg-green-800',
   },
-   {
+  {
     id: 10,
     name: 'Agriculture',
     code: '5038',
     icon: '🌱',
-    description: 'Explores principles of crop and animal husbandry, soil science, and sustainable farming practices.',
+    description: 'With practical lessons in crop and animal husbandry, students learn sustainable agriculture, vital for Zimbabwe’s future.',
     department: 'Technicals & Vocations',
     color: 'bg-emerald-700',
     hoverColor: 'hover:bg-emerald-800',
@@ -106,7 +106,7 @@ const oLevelSubjects = [
 
 export default function OLevelSubjectsPage() {
   return (
-    <div className="min-h-screen text-gray-800 bg-gradient-to-br from-green-50 via-lime-50 to-emerald-100">
+    <div className="min-h-screen text-green-900 bg-gradient-to-br from-green-50 via-lime-50 to-emerald-100">
       <AboutHero
         title="O-Level Subjects"
         breadcrumb={["Home", "Academics", "O-Level Subjects"]}
@@ -115,10 +115,10 @@ export default function OLevelSubjectsPage() {
       <div className="container px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <header className="mb-16 text-center">
           <h1 className="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-emerald-600 to-teal-800 drop-shadow-lg">
-            📚 O-Level Curriculum
+            📚 O-Level Curriculum at Mufakose 1 High
           </h1>
           <p className="max-w-3xl mx-auto mt-5 text-xl text-green-700">
-            Discover the diverse range of O-Level subjects offered at Mufakose 1 High School, designed to provide a strong academic foundation and cater to varied student interests.
+            Mufakose 1 High School offers a diverse and robust O-Level curriculum, empowering students to excel academically and prepare for life beyond the classroom. Our subjects reflect Zimbabwe’s national standards and the needs of our community.
           </p>
         </header>
 
@@ -150,23 +150,23 @@ export default function OLevelSubjectsPage() {
 
         <section className="py-12 mt-20 text-center bg-green-700 rounded-xl">
           <div className="container px-6 mx-auto">
-            <h2 className="text-3xl font-bold text-white">Why Choose Our O-Level Program?</h2>
+            <h2 className="text-3xl font-bold text-white">Why Choose O-Levels at Mufakose 1 High?</h2>
             <ul className="max-w-2xl mx-auto mt-6 space-y-3 text-lg text-left text-green-100 list-disc list-inside">
-              <li>Comprehensive curriculum aligned with national standards.</li>
-              <li>Experienced and dedicated subject specialist teachers.</li>
-              <li>Focus on both theoretical knowledge and practical application.</li>
-              <li>Preparation for A-Level studies and future careers.</li>
+              <li>Comprehensive curriculum aligned with ZIMSEC standards.</li>
+              <li>Experienced teachers who inspire and support every learner.</li>
+              <li>Balance of theory, practicals, and real-world skills.</li>
+              <li>Excellent track record in O-Level results and university placements.</li>
+              <li>Vibrant co-curricular and sports activities alongside academics.</li>
             </ul>
             <button className="px-10 py-3 mt-8 font-semibold text-green-700 transition-transform duration-300 transform bg-white rounded-full shadow-lg text-md hover:bg-green-50 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-200 focus:ring-opacity-75">
               View Prospectus
             </button>
           </div>
         </section>
-
       </div>
 
       <footer className="py-10 mt-12 text-sm text-center text-green-700 bg-green-100 border-t border-green-200">
-        &copy; {new Date().getFullYear()} Mufakose 1 High School. Building Foundations for Success.
+        &copy; {new Date().getFullYear()} Mufakose 1 High School. Shaping Zimbabwe’s Future Leaders.
       </footer>
     </div>
   );
