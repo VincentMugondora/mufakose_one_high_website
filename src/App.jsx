@@ -18,6 +18,8 @@ import OLevelSubjects from './pages/OLevelSubjects'
 import ALevelSubjects from './pages/ALevelSubjects'
 import Extracurricular from './pages/Extracurricular'
 import SciencePage from './pages/SciencePage'
+import MathematicsPage from './pages/MathematicsPage'
+import LanguagesPage from './pages/LanguagesPage'
 
 function App() {
   return (
@@ -40,7 +42,9 @@ function App() {
             <Route path="/academics/o-level-subjects" element={<OLevelSubjects />} />
             <Route path="/academics/a-level-subjects" element={<ALevelSubjects />} />
             <Route path="/academics/extracurricular" element={<Extracurricular />} />
-            <Route path="/academics/science-department" element={<SciencePage />} />
+            <Route path="/academics/departments/science" element={<SciencePage />} />
+            <Route path="/academics/departments/mathematics" element={<MathematicsPage />} />
+            <Route path="/academics/departments/languages" element={<LanguagesPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
